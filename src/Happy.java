@@ -21,5 +21,28 @@ public class Happy {
                 System.out.println(arr[i]+" ");
                 }
         }
+        System.out.println("Минимальное число: ");
+        int min=arr[0];
+        for (int i = 0; i < size; i++) {
+            if (min>arr[i]){
+                min=arr[i];
+            }
+                            }
+        System.out.println(min);
+        System.out.println("Максимальное число: ");
+        int max=arr[0];
+        for (int i = 0; i < size; i++) {
+            if (max<arr[i]){
+                max=arr[i];
+            }
+        }
+        System.out.println(max);
+        System.out.println("Числа, которые делятся на 3 или на 9: ");
+               for (int i = 0; i < size; i++) {
+            if (arr[i]%3==0||arr[i]%9==0){
+                System.out.println(arr[i]+" ");
+            }
+        }
+        System.out.print(min);
     }
 }
