@@ -9,7 +9,8 @@ public class Arithmetic {
         int r = scan.nextInt();
         int t = scan.nextInt();
         int sum=q+w+e+r+t;
+        int prod=q * w * e * r * t;
         System.out.println("Сумма чисел:  "+sum);
-        System.out.println("Произведение чисел:  "+q * w * e * r * t);
+        System.out.println("Произведение чисел:  "+prod);
     }
 }

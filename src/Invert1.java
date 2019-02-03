@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Invert1{
            public static void main(String args[]){
                System.out.print("Введите последовательность символов:");
                Scanner scan = new Scanner(System.in);
