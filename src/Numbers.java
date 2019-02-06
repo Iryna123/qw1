@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Happy {
+public class Numbers {
     public static void main(String args[]) {
         System.out.println("Введите количество чисел в массиве: ");
         Scanner scan1 = new Scanner(System.in);
@@ -42,7 +42,28 @@ public class Happy {
             if (arr[i]%3==0||arr[i]%9==0){
                 System.out.println(arr[i]+" ");
             }
+                                }
+
+        System.out.println("Числа, которые делятся на 5 и на 7: ");
+        for (int i = 0; i < size; i++) {
+            if (arr[i]%5==0&&arr[i]%7==0){
+                System.out.println(arr[i]+" ");
+            }
         }
-        System.out.print(min);
+        System.out.println("Введите 6 трехзначных чисел");
+        int q, w, e;
+        System.out.println("Трехзначные числа, в десятичной записи которых нет повторяющися цифр: ");
+        for (int i = 0; i < size; i++) {
+            if (arr[i]>99 && arr[i]<=1000){
+                q = (arr[i]/10)/10;
+                w = (arr[i]/10)%10;
+                e = (arr[i]%100)%10;
+                if (q !=w && q != e && w != e )
+                    System.out.println(arr[i]);
+                }
+            System.out.println("Трехзначные числа, в десятичной записи которых нет повторяющися цифр: ");
+            }
+
+            }
+
     }
-}
